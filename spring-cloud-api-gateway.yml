@@ -17,8 +17,8 @@ spring:
           uri: http://127.0.0.1:8085
           predicates:
             - Path=/challenge-service/**
-#          filters:
-#            - RewritePath=/challenge-service/(?<path>.*), /$\{path}
+          filters:
+            - RewritePath=/challenge-service/(?<path>.*), /$\{path}
 #            - name: RequestRateLimiter
 #              args:
 #                redis-rate-limiter.replenishRate: 10
