@@ -14,7 +14,7 @@ spring:
     gateway:
       routes:
         - id: challenge-service
-          uri: http://localhost:8085
+          uri: http://127.0.0.1:8085
           predicates:
             - Path=/challenge-service/**
 #          filters:
